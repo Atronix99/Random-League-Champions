@@ -37,7 +37,6 @@ class LoLRollerApp:
         self.create_widgets()
 
     def create_widgets(self):
-        # Sekcja losowania linii
         self.line_frame = ttk.LabelFrame(self.root, text="Losowanie Linii")
         self.line_frame.pack(padx=10, pady=10, fill="x")
 
@@ -85,7 +84,6 @@ class LoLRollerApp:
         self.secondary_line_label.config(text="Druga Linia: Brak")
         self.current_secondary_line = None
 
-        # Ustawienie wylosowanej linii w ComboBox
         self.line_combobox.set(self.current_main_line)
         self.on_line_selected()
 
